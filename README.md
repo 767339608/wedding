@@ -5,6 +5,7 @@ jquery+bootstrap+less
 数据用假数据mockjs
 
 静态文件写在static中
+
 登录页面 login.html
 
 主页面 index.html
