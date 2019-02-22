@@ -1,10 +1,15 @@
 婚礼web后台项目
+
 jquery+bootstrap+less
+
 数据用假数据mockjs
 
 静态文件写在static中
+
 主页面 index.html
+
 头部 header.html
+
 视频页面 media.html
 会员
   会员页面 vip.html
