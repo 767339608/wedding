@@ -69,6 +69,5 @@ jquery+bootstrap+less
   
   道具详情页面  details-item.html
   
->>>>>>> 06bdabba5cf9bc4e8b6358410ac8cd5eb5fa0a0c
   道具修改页面  modify-item.html
   
