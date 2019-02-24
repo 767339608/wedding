@@ -1,0 +1,71 @@
+.row:nth-child(1) {
+  background-color: silver;
+  display: flex;
+  align-items: center;
+}
+.input-group {
+  border: 1px solid;
+  border-radius: 30px;
+  width: 100%;
+  background: white;
+}
+.input-group span {
+  display: table-cell;
+  padding: 6px 0px;
+  vertical-align: middle;
+  cursor: pointer;
+  text-align: center;
+  padding-left: 5pt;
+}
+.input-group input {
+  height: 36px;
+  background: transparent;
+  border: 0;
+  outline: none;
+}
+.time-choose {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 36px;
+}
+.time-choose > span:nth-of-type(2) {
+  padding: 0 7px;
+}
+.input-time {
+  border-radius: 3px;
+  border: 1px solid silver;
+  padding: 6px;
+  width: 130px;
+  display: flex;
+  justify-content: space-between;
+  color: lightslategrey;
+  background: white;
+}
+.input-time span {
+  text-align: center;
+}
+.input-time .glyphicon-calendar {
+  color: blue;
+}
+.media {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 1380px;
+  margin: auto;
+}
+.media li {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 256px;
+  margin-bottom: 50px;
+}
+.media li span,
+.media li img {
+  margin: auto;
+}
+.media li img {
+  cursor: pointer;
+}

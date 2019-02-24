@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>media</title>
+  <link rel="stylesheet" href="../static/bootstrap-3.3.7/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../static/css/media.css">
+  <script src='../static/js/jquery-3.3.1.min.js'></script>
+  <script src='../static/bootstrap-3.3.7/dist/js/bootstrap.min.js'></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3"></div>
+      <div class="col-sm-2">
+        <!-- 搜索 -->
+        <div class="input-group">
+          <span class=" glyphicon glyphicon-search"></span>
+          <input type="text" onkeydown="onKeyDown(event)" placeholder="搜索" />
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="time-choose">
+          <span>创建时间:</span>
+          <div class="input-time">
+            <span>请选择日期</span>
+            <span class='glyphicon glyphicon-calendar'></span>
+          </div>
+          <span>至</span>
+          <div class="input-time">
+            <span>请选择日期</span>
+            <span class='glyphicon glyphicon-calendar'></span>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <button class='btn btn-primary'>查询</button>
+        <button class='btn btn-primary'>上传</button>
+        <button class='btn btn-primary' id='del'>删除</button>
+      </div>
+    </div>
+    <div class="row">
+      <ul class='media'>
+        <li><img src="../static/images/media.jpg" alt=""><span>李国栋 2017.10.01</span></li>
+        <li><img src="../static/images/media.jpg" alt=""><span>李国栋 2017.10.01</span></li>
+        <li><img src="../static/images/media.jpg" alt=""><span>李国栋 2017.10.01</span></li>
+        <li><img src="../static/images/media.jpg" alt=""><span>李国栋 2017.10.01</span></li>
+        <li><img src="../static/images/media.jpg" alt=""><span>李国栋 2017.10.01</span></li>
+        <li><img src="../static/images/media.jpg" alt=""><span>李国栋 2017.10.01</span></li>
+        <li><img src="../static/images/media.jpg" alt=""><span>李国栋 2017.10.01</span></li>
+        <li><img src="../static/images/media.jpg" alt=""><span>李国栋 2017.10.01</span></li>
+        <li><img src="../static/images/media.jpg" alt=""><span>李国栋 2017.10.01</span></li>
+        <li><img src="../static/images/media.jpg" alt=""><span>李国栋 2017.10.01</span></li>
+        <li><img src="../static/images/media.jpg" alt=""><span>李国栋 2017.10.01</span></li>
+        <li><img src="../static/images/media.jpg" alt=""><span>李国栋 2017.10.01</span></li>
+        <li><img src="../static/images/media.jpg" alt=""><span>李国栋 2017.10.01</span></li>
+        <li><img src="../static/images/media.jpg" alt=""><span>李国栋 2017.10.01</span></li>
+        <li><img src="../static/images/media.jpg" alt=""><span>李国栋 2017.10.01</span></li>
+        <li><img src="../static/images/media.jpg" alt=""><span>李国栋 2017.10.01</span></li>
+        <li><img src="../static/images/media.jpg" alt=""><span>李国栋 2017.10.01</span></li>
+        <li><img src="../static/images/media.jpg" alt=""><span>李国栋 2017.10.01</span></li>
+        <li><img src="../static/images/media.jpg" alt=""><span>李国栋 2017.10.01</span></li>
+        <li><img src="../static/images/media.jpg" alt=""><span>李国栋 2017.10.01</span></li>
+        <li><img src="../static/images/media.jpg" alt=""><span>李国栋 2017.10.01</span></li>
+        <li><img src="../static/images/media.jpg" alt=""><span>李国栋 2017.10.01</span></li>
+        <li><img src="../static/images/media.jpg" alt=""><span>李国栋 2017.10.01</span></li>
+        <li><img src="../static/images/media.jpg" alt=""><span>李国栋 2017.10.01</span></li>
+        <li><img src="../static/images/media.jpg" alt=""><span>李国栋 2017.10.01</span></li>
+        <li><img src="../static/images/media.jpg" alt=""><span>李国栋 2017.10.01</span></li>
+        <li><img src="../static/images/media.jpg" alt=""><span>李国栋 2017.10.01</span></li>
+        <li><img src="../static/images/media.jpg" alt=""><span>李国栋 2017.10.01</span></li>
+        <li><img src="../static/images/media.jpg" alt=""><span>李国栋 2017.10.01</span></li>
+        <li><img src="../static/images/media.jpg" alt=""><span>李国栋 2017.10.01</span></li>
+        <li><img src="../static/images/media.jpg" alt=""><span>李国栋 2017.10.01</span></li>
+        <li><img src="../static/images/media.jpg" alt=""><span>李国栋 2017.10.01</span></li>
+        <li><img src="../static/images/media.jpg" alt=""><span>李国栋 2017.10.01</span></li>
+        <li><img src="../static/images/media.jpg" alt=""><span>李国栋 2017.10.01</span></li>
+        <li><img src="../static/images/media.jpg" alt=""><span>李国栋 2017.10.01</span></li>
+        <li><img src="../static/images/media.jpg" alt=""><span>李国栋 2017.10.01</span></li>
+        <li><img src="../static/images/media.jpg" alt=""><span>李国栋 2017.10.01</span></li>
+        <li><img src="../static/images/media.jpg" alt=""><span>李国栋 2017.10.01</span></li>
+        <li><img src="../static/images/media.jpg" alt=""><span>李国栋 2017.10.01</span></li>
+        <li><img src="../static/images/media.jpg" alt=""><span>李国栋 2017.10.01</span></li>
+        <li><img src="../static/images/media.jpg" alt=""><span>李国栋 2017.10.01</span></li>
+      </ul>
+    </div>
+  </div>
+</body>
+<script>
+
+  function onKeyDown(event) {
+    var e = event || window.event || arguments.callee.caller.arguments[0];
+    if (e && e.keyCode == 27) { // 按 Esc 
+      //要做的事情
+
+    }
+    if (e && e.keyCode == 113) { // 按 F2 
+      //要做的事情
+
+    }
+    if (e && e.keyCode == 13) { // enter 键
+      alert("此处回车触发搜索事件");
+
+    }
+
+  }
+  $('#del').toggle(function () {
+    $('.media li img').attr('src', '../static/images/medianochoose.jpg')
+    $('.media').click(function (ev) {
+      console.log(ev.target.nodeName)
+      if (ev.target.nodeName == 'IMG') {
+        $(ev.target).attr('src', '../static/images/mediachoose.jpg')
+      }
+    })
+  })
+
+
+</script>
+
+</html>
