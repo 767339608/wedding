@@ -5,6 +5,7 @@ jquery+bootstrap+less
 数据用假数据mockjs
 
 静态文件写在static中
+
 登录页面 login.html
 
 主页面 index.html
@@ -68,6 +69,5 @@ jquery+bootstrap+less
   
   道具详情页面  details-item.html
   
->>>>>>> 06bdabba5cf9bc4e8b6358410ac8cd5eb5fa0a0c
   道具修改页面  modify-item.html
   
