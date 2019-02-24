@@ -117,6 +117,18 @@
       }
     })
   })
+  function onKeyDown(ev) {
+    let html = '';
+    if (ev.code == 'Enter') {
+      for (let i = 0; i < $('.media li span').length; i++) {
+        if ($('.media li span')[i].innerText.indexOf($('#sreach').val()) != -1) {
+          html += '<li>' + $($('.media li span')[i]).parent().html() + '</li>';
+        }
+      }
+      $('.media').empty();
+      $('.media').html(html);
+    }
+  }
 
 
 </script>
