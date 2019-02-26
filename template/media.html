@@ -6,9 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>media</title>
+  <link rel="stylesheet" href="../static/layui/css/layui.css">
+
   <link rel="stylesheet" href="../static/bootstrap-3.3.7/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="../static/css/media.css">
   <script src='../static/js/jquery-3.3.1.min.js'></script>
+  <script src="../static/layui/layui.js"></script>
   <script src='../static/bootstrap-3.3.7/dist/js/bootstrap.min.js'></script>
 </head>
 
@@ -28,32 +31,22 @@
         <div class="time-choose">
           <span>创建时间:</span>
           <div class="input-time">
-            <span>请选择日期</span>
+            <span id="datetime">请选择日期</span>
             <span class='glyphicon glyphicon-list-alt' id='date'></span>
           </div>
-          <!-- date-pop-up -->
-          <ul class="date-pop-up">
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
           <span>至</span>
           <div class="input-time">
-            <span>请选择日期</span>
+            <span id="datetime">请选择日期</span>
             <span class='glyphicon glyphicon-list-alt' id='date'></span>
           </div>
-          <!-- date-pop-up -->
-          <ul class="date-pop-up two">
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
+
         </div>
       </div>
       <!-- shoose -->
       <div class="col-sm-2">
         <button class='btn btn-primary' id='select'>查询</button>
-        <button class='btn btn-primary'>上传</button>
+        <input type="file" style='display: none;'>
+        <button class='btn btn-primary' id='git'>上传</button>
         <button class='btn btn-primary' id='del'>删除</button>
       </div>
     </div>
@@ -122,5 +115,30 @@
   </div>
 </body>
 <script src="../static/js/media.js"></script>
+<script>
+  layui.use('laydate', function () {
+    var laydate = layui.laydate;
+
+    //执行一个laydate实例
+    laydate.render({
+      elem: '#datetime' //指定元素
+    });
+  });
+  layui.use('upload', function () {
+    var upload = layui.upload;
+
+    //执行实例
+    var uploadInst = upload.render({
+      elem: '#git' //绑定元素
+      , url: '/upload/' //上传接口
+      , done: function (res) {
+        //上传完毕回调
+      }
+      , error: function () {
+        //请求异常回调
+      }
+    });
+  });
+</script>
 
 </html>
