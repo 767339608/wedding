@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../../static/layui/css/layui.css">
+  <script src="../../static/layui/layui.js"></script>
+  <script src="../../static/js/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+  <div class="prop_div">
+    <table class="layui-table" lay-skin="line" id="prop"></table>
+  </div>
+  <div class="prop_form" style="display: none">
+    <h1>道具详情</h1>
+    <form action="">
+      <label> 购买时间
+        <input type="text" class="buy_time">
+      </label>
+      <label> 道具名称
+        <input type="text" class="buy_prop">
+      </label>
+      <label> 数量
+        <input type="text" class="buy_num">
+      </label>
+      <label> 单价
+        <input type="text" class="buy_one_money">
+      </label>
+      <label> 总价
+        <input type="text" class="buy_all_money">
+      </label>
+      <label> 剩余
+        <input type="text" class="buy_surplus">
+      </label>
+      <label>
+        <input type="button" value="修改" class="modify">
+      </label>
+      <label>
+        <input type="button" value="删除" class="delete">
+      </label>
+    </form>
+  </div>
+
+
+</body>
+<script type="text/javascript">
+  layui.use('table', function () {
+    var table = layui.table;
+    table.render({
+      elem: '#prop',
+      url: '../../static/json/item.json',
+      // cellMinWidth: 80 //全局定义常规单元格的最小宽度，layui 2.2.1 新增
+      layout: ['limit', 'count', 'prev', 'page', 'next', 'skip'], //自定义分页布局
+      page: true,
+      limits: [10, 20, 30],
+      reponse: {
+        statusName: 'error',
+        statusCode: '200',
+        countName: 'count',
+        dataName: 5
+      },
+      cols: [
+        [{
+          field: 'time',
+          width: "10%",
+          title: '时间',
+        }, {
+          field: 'prop',
+          width: "20%",
+          title: '道具名称'
+        }, {
+          field: 'num',
+          width: "15%",
+          title: '数量',
+          sort: true
+        }, {
+          field: 'one_money',
+          width: "15%",
+          title: '单个成本'
+        }, {
+          field: 'all_money',
+          title: '总价',
+          width: "15%",
+        }, {
+          field: 'surplus',
+          title: '剩余',
+          width: "15%",
+          sort: true
+        },//minWidth：局部定义当前单元格的最小宽度，layui 2.2.1 新增
+        {
+          field: 'operate',
+          title: '操作',
+          width: "10%",
+        }
+        ]
+      ]
+    });
+  });
+</script>
+<script src="../../static/js/item.js"></script>
+
+</html>
