@@ -1,0 +1,115 @@
+{
+  "code": 0,
+  "msg": "",
+  "count": 15,
+  "data": [
+    {
+      "id": 10001,
+      "username": "user-1",
+      "sex": "李国栋",
+      "city": "13654487201",
+      "sign": "钻石会员",
+      "experience": 8888,
+      "logins": 58,
+      "wealth": 64928690,
+      "classify": " <a href='vip/details-item.html?2'>操作</a>",
+      "score": "2017.12.25婚纱照+婚庆8888元"
+    },
+    {
+      "id": 10002,
+      "username": "user-2",
+      "sex": "李国栋",
+      "city": "13654487201",
+      "sign": "钻石会员",
+      "experience": 8888,
+      "logins": 77,
+      "wealth": 6298078,
+      "classify": " <a href='vip/details-item.html?3'>操作</a>",
+      "score": "2017.12.25婚纱照+婚庆8888元"
+    },
+    {
+      "id": 10003,
+      "username": "user-3",
+      "sex": "李国栋",
+      "city": "13654487201",
+      "sign": "钻石会员",
+      "experience": 8888,
+      "logins": 157,
+      "wealth": 37117017,
+      "classify": " <a href='vip/details-item.html?4'>操作</a>",
+      "score": "2017.12.25婚纱照+婚庆8888元"
+    },
+    {
+      "id": 10004,
+      "username": "user-4",
+      "sex": "李国栋",
+      "city": "13654487201",
+      "sign": "钻石会员",
+      "experience": 8888,
+      "logins": 51,
+      "wealth": 76263262,
+      "classify": " <a href='vip/details-item.html?5'>操作</a>",
+      "score": "2017.12.25婚纱照+婚庆8888元"
+    },
+    {
+      "id": 10005,
+      "username": "user-5",
+      "sex": "李国栋",
+      "city": "13654487201",
+      "sign": "钻石会员",
+      "experience": 8888,
+      "logins": 68,
+      "wealth": 60344147,
+      "classify": " <a href='vip/details-item.html?6'>操作</a>",
+      "score": "2017.12.25婚纱照+婚庆8888元"
+    },
+    {
+      "id": 10006,
+      "username": "user-6",
+      "sex": "李国栋",
+      "city": "13654487201",
+      "sign": "钻石会员",
+      "experience": 8888,
+      "logins": 37,
+      "wealth": 57768166,
+      "classify": " <a href='vip/details-item.html?7'>操作</a>",
+      "score": "2017.12.25婚纱照+婚庆8888元"
+    },
+    {
+      "id": 10007,
+      "username": "user-7",
+      "sex": "李国栋",
+      "city": "13654487201",
+      "sign": "钻石会员",
+      "experience": 727,
+      "logins": 150,
+      "wealth": 82030578,
+      "classify": " <a href='vip/details-item.html?8'>操作</a>",
+      "score": "2017.12.25婚纱照+婚庆8888元"
+    },
+    {
+      "id": 10008,
+      "username": "user-8",
+      "sex": "李国栋",
+      "city": "13654487201",
+      "sign": "钻石会员",
+      "experience": 951,
+      "logins": 133,
+      "wealth": 16503371,
+      "classify": " <a href='vip/details-item.html?9'>操作</a>",
+      "score": "2017.12.25婚纱照+婚庆8888元"
+    },
+    {
+      "id": 10009,
+      "username": "user-9",
+      "sex": "李国栋",
+      "city": "13654487201",
+      "sign": "钻石会员",
+      "experience": 484,
+      "logins": 25,
+      "wealth": 86801934,
+      "classify": " <a href='vip/details-item.html?10'>操作</a>",
+      "score": "2017.12.25婚纱照+婚庆8888元"
+    }
+  ]
+}

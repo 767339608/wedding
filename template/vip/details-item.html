@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../static/css/details-item.css">
+</head>
+
+<body>
+    <div class="box-2"></div>
+    <div class="box-1">
+        <p>会员详情</p>
+        <div class="box-3">
+            <ul class="ul1">
+                <li> <input type="text"></li>
+                <li> <input type="text"></li>
+                <li> <input type="text"></li>
+                <li> <input type="text"></li>
+                <li> <select name="" id="">
+                    <option value="">普通会员</option>
+                    <option value="">黄金会员</option>
+                    <option value="">钻石会员</option>
+                </select></li>
+                <li> <input type="text"></li>
+                <li><input class="inp1" type="text"></li>
+
+            </ul>
+            <ul class="ul2">
+                <li>姓名</li>
+                <li>电话</li>
+                <li>卡号</li>
+                <li>时间</li>
+                <li>会员等级</li>
+                <li>消费金额</li>
+                <li>消费详情</li>
+            </ul>
+        </div>
+    </div>
+    <div class="dibu">
+        <div class="box-4">
+            <div class="box-5">
+             <button>修改</button>
+             <button>删除</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script type="text/javascript">
+    function ajax(method, url, data,fn) {     
+let htp = null;
+try {
+htp = new XMLHttpRequest()
+}
+catch (err) {
+htp = new ActiveXObject("Microsoft.XMLHTTP")
+}
+if (method == "get") {
+htp.open(method, url +"?"+ data);
+htp.send()
+} else {
+htp.open(method, url);
+htp.setRequestHeader('content-type', 'application/x-www-form-urlencoded');
+htp.send(data)
+}
+htp.onreadystatechange = function () {
+if (htp.readyState == 4 && htp.status == 200) {
+fn(htp.responseText)
+}
+
+}
+}
+//              	截取id
+let tid=window.location.search.substring(1,);     
+var odiv=document.getElementsByClassName("ul1")[0];
+ajax("get","../../static/123.json","data="+tid,function(data){
+let  dapr=JSON.parse(data);
+console.log(dapr.data[tid])
+
+odiv.innerHTML=`
+<li> <input  value=" ${dapr.data[tid].sex}" type="text"></li>
+                <li> <input  value=" ${dapr.data[tid].city}" type="text"></li>
+                <li> <input   value=" ${dapr.data[tid].id}" type="text"></li>
+                <li> <input type="text"></li>
+                <li> <select    value=" ${dapr.data[tid].sign}" name="" id="">
+                    <option value="">普通会员</option>
+                    <option value="">黄金会员</option>
+                    <option value="">钻石会员</option>
+                </select></li>
+                <li> <input  value=" ${dapr.data[tid].experience}"   type="text"></li>
+                <li><input value=" ${dapr.data[tid].score}" class="inp1" type="text"></li>`
+
+})  
+
+</script>
+</html>

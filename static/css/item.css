@@ -1,0 +1,10 @@
+.prop_form h1 {
+  text-align: center;
+}
+.prop_form form {
+  width: 12%;
+  margin: 0 auto;
+}
+.prop_form form label {
+  margin: 10px 0;
+}

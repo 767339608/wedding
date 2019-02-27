@@ -6,40 +6,35 @@
   <meta name="viewport"
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <title>layui在线调试</title>
-  <link rel="stylesheet" href="../../static/css/vip.css">
+  <link rel="stylesheet" href="../../static/css/order.css">
 </head>
 </head>
 
 <body>
   <table id="demo" lay-filter="test"></table>
   <script>
-    $.ajax({
-      url: "../../static/123.json",
-      type: "get",
-      success: function (data) {
-        localStorage.setItem("0", JSON.stringify(data.data));
-      }
-    })
     layui.use('table', function () {
       var table = layui.table;
+
       //第一个实例
       table.render({
         elem: '#demo'
-        , height: 750
-        , url: '../../static/123.json' //数据接口
+        , height: 680
+        , url: '../../static/dingdan.json' //数据接口
         , page: true //开启分页
         , cols: [[ //表头
-          { field: 'id', title: '卡号', width: '20%', sort: true, }
-
+          { field: 'id', title: '婚礼时间', width: '10%', sort: true, fixed: 'left' }
           , { field: 'sex', title: '姓名', width: '10%', }
           , { field: 'city', title: '电话', width: '10%' }
-          , { field: 'sign', title: '会员等级', width: '10%' }
-          , { field: 'experience', title: '消费金额', width: '10%', sort: true }
-          , { field: 'score', title: '消费详情', width: '20%', sort: true, }
+          , { field: 'sign', title: '金额', width: '10%' }
+          , { field: 'experience', title: '定金', width: '10%', sort: true }
+          , { field: 'score', title: '婚礼套餐', width: '20%', sort: true, }
+          , { field: 'wealth', title: '备注', width: '20%', }
           , { field: 'classify', title: '操作', width: '20%' }
 
         ]]
       });
+
     });
 
   </script>
